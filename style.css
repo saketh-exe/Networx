@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GOOGLE FONTS  */
+html{
+    scroll-behavior: smooth;
+    transition: all 1000ms ease-in-out;
+}
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    color: hsla(0, 0%, 9%, 0.856);
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+i{
+    width: 100px;
+    height: 100px;
+}
+li{
+    list-style: none;
+}
+/* GENDRAL STYLES */
+.profile_img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 5px 20px rgb(172, 172, 172);
+   
+}
+.nav ul {
+    display: flex;
+    flex: 1 1 auto;
+}
+.nav ul a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin: 5px 8px;
+    padding: 6px 6px 6px 11px;
+    gap: 7px;
+    position: relative;
+    transition: all 400ms ease-in-out;
+   
+    
+}
+.navbar-1 a{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 35px;
+    transition: 400ms all ease-in-out;
+    
+}
+.navbar-1 a:hover{
+    background-color: hsl(0, 0%, 87%);
+    padding: 10px 35px 10px 20px;
+    transition: 400ms all ease-in-out;
+    border-radius: 15px;
+}
+.online{
+    position: relative;
+}
+ .online::after{
+    content: " ";
+    width: 7px;
+    height: 7px;
+    border: 2px solid white;
+    background-color: hsl(106, 67%, 60%);
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    transition: all 400ms ease-in-out;
+    
+}
+.nav ul a:hover{
+    background-color: hsl(208, 100%, 89%);
+    padding: 10px 10px 10px 10px;
+    transition: all 400ms ease-in-out;
+    border-radius: 10px;
+}
+.active{
+    background-color: hsl(34, 100%, 89%);
+    padding: 6px 6px 6px 6px;
+    transition: all 400ms ease-in-out;
+    border-radius: 10px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(216, 221, 226);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+input{
+    border: 0;
+    background-color: rgb(216, 221, 226);
+    outline: none;
+    width: 100px;
+}
+.navbar-3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* NAV-BAR COMPLETE */

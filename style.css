@@ -130,3 +130,54 @@ input{
     gap: 20px;
 }
 /* NAV-BAR COMPLETE */
+
+.container{
+    display: flex;
+    padding: 20px 6%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.lside-content{
+    padding-top: 30px;
+    background-color: white;
+    background-image: url(img/banner.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.banner{
+    z-index: -100;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profile-info{
+padding: 35px 25px;
+}
+.img-container{
+    padding: 20px 20px 16px 20px;
+    border-radius: 50%;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    border: 10px solid rgb(255, 255, 255);
+    
+}
+.profile-info img{
+    width: 40px;
+    height: 40px;
+    
+}
+.right{
+    flex-basis: 25%;
+    align-self: flex-end;
+}
+.center{
+    flex-basis: 47%;
+    
+}

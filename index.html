@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/acbb96d20a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -30,7 +31,7 @@
                 <input type="search" placeholder="Search">
             </div>
             <div class="online">
-                <img src="img/profile.png" alt="profile" class="profile_img">
+                <img src="img/profile.svg" alt="profile" class="profile_img">
             </div>
         </div>
     </nav>
@@ -66,7 +67,7 @@
             </div>
             <div class="sidebar_profile-j">
                 <a href="SavedJobs.html"><div class="ongoing-p">
-<p>Saved Jobs</p>
+                    <p>Saved Jobs</p>
                         <img src="img/next.png" width="20px" height="20px">
                     </div>
                 </a>
@@ -83,42 +84,75 @@
             </div>
         </div>
         <!-- center content -->
-        <div class="center"></div>
+        <div class="center">
+            <div class="Quickpost">
+                <img src="img/profile.svg" class="Quickpost-f">
+                <input type="text" placeholder="Make a Post">
+                <i class="fa-regular fa-image fa-2x"></i> 
+                <i class="fa-solid fa-calendar-days fa-2x"></i>
+                <i class="fa-solid fa-newspaper fa-2x"></i>
+                <button><img src="img/Send.png" alt="Send" width="35px" height="35px" id="button"></button>
+            </div>
+            <div class="content">
+                <div class="post-template">
+                    <div class="top">
+                        <img src="img/profile.svg">
+                        <div class="extras">
+                            <ul>
+                                <li>Maya Chaytra</li>
+                                <li>Student</li>
+                                <li>3w . <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                                    <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                                  </svg></li>
+                            </ul>
+                        </div>
+                        <button id="follow">+ Follow</button>
+                        <button id="t-dots"><i class="fa-solid fa-ellipsis-vertical fa-2x"></i></button>
+                    </div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>  
+                <div class="post-template"></div>  
+                <div class="post-template"></div>  
+                <div class="post-template"></div>  
+            </div>
+        </div>
         <!-- right sidebar -->
         <div class="right">
-            <div class="news">
-                <h2>Updates :</h2>
-
-                <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</a>
-                <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</a>
-                <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur</a>
-                <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet</a>
-                <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor </a>
-                <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur adipisicing</a>
-               
-            </div>
+           
             <div class="stories">
             <h3>
                 Stories:
             </h3>
             <div class="story">
             <div class="pro-fil">
-                <a href="story/ken.html"><img src="img/iamjustken.jpg" width="70px" height="70px" alt=""></a>
-                <p>Ken</p>
+                <a href="story/ken.html"><img src="img/profile.svg" width="70px" height="70px" alt=""></a>
+                <p>Person 1</p>
             </div>
             <div class="pro-fil">
-                <a href="story/rock.html"><img src="img/rock.jpg" width="70px" height="70px" alt=""></a>
-                <p>Rock</p>
+                <a href="story/rock.html"><img src="img/profile.svg" width="70px" height="70px" alt=""></a>
+                <p>Person 2</p>
             </div>
             <div class="pro-fil">
-                <a href="story/will.html"><img src="img/will.jpg" width="70px" height="70px" alt=""></a>
-                <p>Will</p>
+                <a href="story/will.html"><img src="img/profile.svg" width="70px" height="70px" alt=""></a>
+                <p>Person 3</p>
             </div>
             <div class="pro-fil">
-                <a href="story/optimus.html"><img src="img/optimus.jpg" width="70px" height="70px" alt=""></a>
-                <p>Optimus</p>
+                <a href="story/optimus.html"><img src="img/profile.svg" width="70px" height="70px" alt=""></a>
+                <p>Person 4</p>
             </div>
         </div>
+    </div>
+    <div class="news">
+        <h2>Updates :</h2>
+
+        <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</a>
+        <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</a>
+        <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur</a>
+        <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet</a>
+        <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor </a>
+        <a href="news/stories.html"><img src="img/bell.png" width="10px" height="10px">Lorem ipsum dolor sit amet consectetur adipisicing</a>
+       
     </div>  
         </div>
     </div>

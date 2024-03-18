@@ -193,7 +193,8 @@ padding: 35px 20px 15px 20px;
     color: var(--headings);
     font-size: 27px;
     font-weight: 600;
-    padding-top: 7.5px;
+    padding-top: 10.5px;
+    padding-bottom: 2px;
 }
 .profile-info h3{
     color: var(--subheadings);
@@ -310,14 +311,175 @@ padding: 35px 20px 15px 20px;
     
 }
 .center{
-    flex-basis: 47%;
+    flex-basis: 55%; 
+    height: 800vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     
 }
+.Quickpost{
+    display: flex;
+    background-color: var(--lside-content);
+    box-shadow: 1px 1px 15px var(--nav-sha-c);
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 10px;
+    width: 100%;
+}
+.Quickpost-f{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1.5%;
+}
+.Quickpost-s{
+    width: 55px;
+    height: 55px;
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+.fa-regular,.fa-solid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.fa-image{
+    margin-left: 3%;
+}
 
+.fa-regular:hover,.fa-solid:hover{
+    opacity: 0.7;
+}
+.Quickpost input{
+    width: 60%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    transition: 200ms ease;
+ 
+}
+.Quickpost button{
+    width: 10%;
+    height: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+box-sizing: border-box;
+    border-radius: 12px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+.Quickpost button:hover{
+    background-color: #a0a0a0;
+    transition: all 300ms ease;
+}
+.Quickpost button:active{
+    background-color: #ffffff;
+    border: #a0a0a0 5px solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.Quickpost input:hover{
+    background-color: #e0e0e0;
+    transition: 200ms ease;
+}
 
+.content{
+    background-color: var(--lside-content);
+    height: 800vh;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--nav-sha-c);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.post-template{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 650px;
+    display: flex;
+   border-radius: 10px;
+   padding: 10px;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    gap: 15px;
+}
+.top img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+.extras{
+    width: 80%;
+    background-color: transparent;
+    
+ 
+}
+.extras li:nth-child(1){
+font-size: 20px;
+font-weight: 500;
+letter-spacing: 1px;
+}
+.extras li:nth-child(2){
+font-size: 15px;
+font-weight: 500;
+/* text-decoration: underline;
+text-decoration-color: #9c9c9c; */
+text-underline-offset: 2px;
+color: #9c9c9c;
+letter-spacing: 1px;
 
-
-
+}
+.extras li:nth-child(3){
+    font-size: 15px;
+    font-weight: 500;
+    color: #201f29;
+    display: flex;
+    align-items: center;
+ 
+}
+.top #t-dots{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+.top #follow{
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(130, 130, 255);
+    
+}
 
 
 
@@ -371,6 +533,7 @@ padding: 35px 20px 15px 20px;
     padding: 20px;
     box-shadow: 1px 1px 15px var(--nav-sha-c);
     border-radius: 15px;
+    margin-bottom: 15px;
 } 
 .stories h3{
     padding-bottom: 20px;
@@ -383,7 +546,7 @@ padding: 35px 20px 15px 20px;
 }
 .story img{
     border-radius: 50%;
-   background-image: radial-gradient(circle at center, #c300ffb4, #ffffff);
+   background-image: radial-gradient(circle at center, #ecacffb4, #ffffff);
    padding: 4px;
    
     

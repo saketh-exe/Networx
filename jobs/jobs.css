@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+#preloader{
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+.loading-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+.loading-box:nth-child(1){
+    animation: loading1 1s ease-out 1 500ms ;
+    animation-fill-mode: forwards;
+ 
+}
+.loading-box:nth-child(2){
+    animation: loading2 1s ease-out 1 1500ms;
+    animation-fill-mode: forwards;
+}
+.loading-box:nth-child(3){
+    animation: loading3 1s ease-out 1  2500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes loading1 {
+    
+    to{
+        background-color: hsl(0, 100%, 71%);
+    }
+}
+@keyframes loading2 {
+    
+    to{
+        background-color: hsl(39, 100%, 67%);
+    }
+}
+@keyframes loading3 {
+    
+    to{
+        background-color: hsl(123, 100%, 71%);
+    }
+}
+
+body{
+    background-color: rgb(211, 234, 255);
+}
+
+
+h1{
+    font-size: 40px;
+    color: rgb(3, 0, 78);
+    position: relative;
+    display: inline-block;
+    height: max-content;
+}
+h1::before{
+    content: "";
+    background-color: rgb(3, 0, 78);
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    left: -20px;
+}
+.mainbar{
+    padding-top: 3vh;
+    height: 10vh;
+    display: flex;
+    gap: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.mainbar img{
+    width: 50px;
+    
+}
+.search-box{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#search{
+
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    font-size: larger;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px black solid;
+}
+.grid-wrapper{
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    background-color: rgba(245, 222, 179, 0);
+    grid-template-columns: repeat(4,1fr);
+}
+.job-cards{
+    height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+.card-content{
+    background-color: rgba(250, 235, 215, 0);
+    width: 100%;
+    padding: 10px;
+    height: 90%;
+}
+.job-cards button{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 10%;
+    border-radius: 15px;
+    border: 2px black solid;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 300ms ease;
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.164);
+}
+.card-content h3{
+    color: rgb(0, 83, 65);
+    font-size: 20px;
+}
+.card-content h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.card-content p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: justify;
+}
+.content-image-box img{
+    width: 100px;
+}
+.content-image-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}

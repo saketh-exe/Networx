@@ -117,13 +117,15 @@ h1::before{
     border: 2px black solid;
 }
 .grid-wrapper{
+    position: relative;
     padding: 1rem;
     display: grid;
     gap: 1rem;
     background-color: rgba(245, 222, 179, 0);
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 .job-cards{
+    
     height: 500px;
     width: 100%;
     border-radius: 15px;
@@ -146,14 +148,15 @@ h1::before{
     background-color: transparent;
     cursor: pointer;
     font-size: 20px;
-    font-weight: 400;
-    transition: 300ms ease;
+    font-weight: 500;
+    transition: 400ms ease;
 }
 button:hover{
-    background-color: rgba(128, 128, 128, 0.164);
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
 }
 .card-content h3{
-    color: rgb(0, 83, 65);
+    color: rgb(64, 165, 89);
     font-size: 20px;
 }
 .card-content h2{
@@ -176,4 +179,61 @@ button:hover{
     align-items: center;
     margin-bottom: 30px;
     
+}
+
+.Apply{
+    width: 100%;
+    z-index: 10;
+    border-radius: 15px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    padding: 40px;
+}
+#apply1{
+    background-color: rgb(255, 255, 255); 
+}
+#apply2{
+    background-color: rgba(255, 0, 0, 0.281); 
+}
+#apply3{
+    background-color: rgba(138, 138, 138, 0.281); 
+}
+
+.apply-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(165, 42, 42, 0);
+    margin-bottom: 100px;
+}
+.Apply h3{
+    font-size: 60px;
+    display: inline;
+    text-decoration: underline;
+
+}
+.apply-head i{
+    font-size: 60px;
+}
+.apply-content{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    align-items: center;
+ 
+}
+.apply-content h4{
+    font-size: 30px;
+    display: inline;
+    width: 20%;
+}
+.skills{
+    width: 70%;
+    font-size: 40px;
+    display: flex;
+    gap: 3%;
 }

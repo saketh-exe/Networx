@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networx</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/acbb96d20a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="circles"> </div>
@@ -12,6 +13,7 @@
     <div class="circles3"></div>
     
     <div class="mainform">
+        
         <div class="image">
             <div class="container">
                 <img src="../img/network.png" alt="logo" >
@@ -39,17 +41,51 @@
             </div>
         </div>
         <div class="login-form">
+            <div class="sign-up" id="sign-up">
+                <div id="sign-co">
+                    <div class="login-button">
+                        <p onclick="Login()">Not New?</p>
+                        <button onclick="Login()">Login</button>
+                    </div>
+                    <div class="signup-title">
+                        <h1>Welcome to Networx</h1>
+                        <p>Register Now!</p>
+                    </div>
+                    <form action= "../index.html">
+                        <label for="username">UserName:</label>
+                        <input type="text" id="username" placeholder="@saketh_Vishnu" required title="Please enter a username">  
+                        <label for="email">Email:</label>
+                        <input type="email" id="Email" placeholder="Psakethvishnu@gmail.com" required>
+                        <label for="Password">Password:</label>
+                        <input type="password" id="Password" placeholder="Password" required>
+                        <button>Sign in</button>
+                    </form>
+                </div>
+                
+            </div>
             <div class="sign-up-button">
-                <p>New User?</p>
-                <button>Sign up</button>
+                <p onclick="signin()">New User?</p>
+                <button onclick="signin()">Sign up</button>
             </div>
             <h1>Welcome Back!!</h1>
             <form action= "../index.html">
                 <label for="username">UserName:</label>
-                <input type="text" id="username" placeholder="@saketh_Vishnu">
+                <input type="text" id="username" placeholder="@saketh_Vishnu" required>
                 <label for="Password">Password:</label>
-                <input type="password" id="Password" placeholder="Huh!">
+                <input type="password" id="Password" placeholder="Password" required>
+                <div class="forget"><a>forgot password?</a></div>
                 <button>Login</button>
+                <div class="line">
+                    <div class="or">OR</div>
+                </div>
+                <div class="t-p">
+                    <!--     -->
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-meta"></i>
+                    <i class="fa-brands fa-windows"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
             </form>
         </div>
     </div>

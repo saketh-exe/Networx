@@ -15,59 +15,56 @@
 
 
 #preloader{
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.233);
     position: fixed;
     z-index: 100;
     width: 100%;
     height: 100vh;
     display: flex;
-    
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    gap: 10%;
+ 
     align-items: center;
+
+    img{
+        width: 150px;
+        animation: rotate linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%) 2.5s forwards;
+    }
 }
 .loading-box{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0);
+    width: 95%;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgba(221, 74, 74, 0);
+    /* border: 1px solid black; */
 
 }
-.loading-box:nth-child(1){
-    animation: loading1 1s ease-out 1 500ms ;
-    animation-fill-mode: forwards;
- 
+.load-grad{
+    background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0));
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    animation: loading1 linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%) 2.5s forwards;
 }
-.loading-box:nth-child(2){
-    animation: loading2 1s ease-out 1 1500ms;
-    animation-fill-mode: forwards;
-}
-.loading-box:nth-child(3){
-    animation: loading3 1s ease-out 1  2500ms;
-    animation-fill-mode: forwards;
-}
+
 @keyframes loading1 {
     
     to{
-        background-color: hsl(0, 100%, 71%);
+        width: 100%;
     }
 }
-@keyframes loading2 {
-    
-    to{
-        background-color: hsl(39, 100%, 67%);
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
     }
 }
-@keyframes loading3 {
-    
-    to{
-        background-color: hsl(123, 100%, 71%);
-    }
-}
-
 body{
-    background-color: rgb(211, 234, 255);
+    background-color: rgb(176, 233, 255);
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -241,13 +238,15 @@ button:hover{
     font-size: 30px;
     margin-bottom: 30px;
     text-decoration: underline;
+    color: #933a3a;
  
 }
 .skills{
   
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 50px;
     padding: 0px 25px 0px 25px;
+    text-shadow: 3px 3px 30px hsl(0, 0%, 0%);
 
 }
 .skills > *::before{
@@ -295,6 +294,16 @@ flex-basis: 80%;
 }
 .job-text p{
     margin-bottom: 2px;
+    width: max-content;
+    padding: 1px 10px 1px 10px;
+    background-color: #7fffd442;
+    border-radius: 50px;
+    cursor: none;
+    transition: all 500ms ease;
+}
+.job-text p:hover{
+    color: wheat;
+    background-color: rgb(46, 46, 46);
 }
 .job-company{
     font-weight: 500;
@@ -314,7 +323,8 @@ flex-basis: 10%;
     justify-content: center;
     gap: 3%;
     border-radius: 15px;
-    background-color: rgb(144, 255, 168);
+    background-color: rgb(59, 59, 59);
+    color: wheat;
 }
 .skills > div > div {
     font-weight: 600;

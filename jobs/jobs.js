@@ -8,7 +8,8 @@ let job_cards = document.getElementsByClassName("job-cards");
 
 setTimeout(() => {
     loading.style.display = "none";
-}, 3500);
+    document.body.style.overflowY = "scroll"
+}, 2500);
 
 function software_engi() {
     pop1.style.display = "block";

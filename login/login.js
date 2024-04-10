@@ -27,11 +27,10 @@ function Login(){
       log.style.display = "none";
   }, 300);
 }
-
-
-
 function signin(){
   lc.style.display = "block";
   log.style.display = "block";
   log.style.animation = "signup 0.5s ease 1";
 }
+
+

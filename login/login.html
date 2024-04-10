@@ -53,12 +53,12 @@
                     </div>
                     <form action= "../index.html">
                         <label for="username">UserName:</label>
-                        <input type="text" id="username" placeholder="@saketh_Vishnu" required title="Please enter a username">  
+                        <input type="text" id="new-username" placeholder="@saketh_Vishnu" required title="Please enter a username">  
                         <label for="email">Email:</label>
-                        <input type="email" id="Email" placeholder="Psakethvishnu@gmail.com" required>
+                        <input type="email" id="email" placeholder="Psakethvishnu@gmail.com" required>
                         <label for="Password">Password:</label>
-                        <input type="password" id="Password" placeholder="Password" required>
-                        <button>Sign in</button>
+                        <input type="password" id="new-Password" placeholder="Password" required>
+                        <button onclick="next()">Sign in</button>
                     </form>
                 </div>
                 
@@ -74,12 +74,11 @@
                 <label for="Password">Password:</label>
                 <input type="password" id="Password" placeholder="Password" required>
                 <div class="forget"><a>forgot password?</a></div>
-                <button>Login</button>
+                <button >Login</button>
                 <div class="line">
                     <div class="or">OR</div>
                 </div>
                 <div class="t-p">
-                    <!--     -->
                     <i class="fa-brands fa-google"></i>
                     <i class="fa-brands fa-apple"></i>
                     <i class="fa-brands fa-meta"></i>
@@ -92,4 +91,5 @@
 </body>
 <script src="login.js">
 </script>
+
 </html>

@@ -609,7 +609,7 @@ letter-spacing: 1px;
 }
 .counter-left ,.fa-regular{
     margin: 0;
-    font-size: 25px;
+    font-size: 34px;
 }
 .bottom-buttons{
     padding-top: 20px;
@@ -708,4 +708,63 @@ letter-spacing: 1px;
 .stories .pro-fil:hover{
     transform: scale(1.2);
     transition: all 300ms ease-in-out;
+}
+
+.post-interface{
+    width: 100%;
+    height: 100vh;
+    background-color: #5c5c5ca1;
+    position: absolute;
+    z-index: 10;
+    padding: 20px;
+    display: none;
+    padding-top: 100px;
+    .post-close{
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        float: right;
+        width: max-content;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all 300ms ease;
+        cursor: pointer;
+    }
+    .post-close:hover{
+        background-color: #5c5c5c;
+        color: white;
+    }
+    .post-content{
+        width: 100%;
+        height: 80vh;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.486);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        .post-img{
+            width: 45%;
+            border: #5e5e5e dashed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        .post-details{
+            width: 50%;
+          
+            input{
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #5c5c5c67;
+                border-radius: 50px;
+                height: 30px;
+                padding: 10px;
+            }
+        }
+    }
 }

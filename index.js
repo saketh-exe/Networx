@@ -18,3 +18,9 @@ profile.addEventListener("click",() =>{
     
 })
 
+document.querySelector(".post-close").addEventListener("click",()=>{
+   document.querySelector(".post-interface").style.display = "none";
+})
+document.querySelector("#Post-btn").addEventListener("click",() => {
+   document.querySelector(".post-interface").style.display = "block";
+})

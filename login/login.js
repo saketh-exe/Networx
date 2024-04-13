@@ -11,10 +11,7 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 5000); // Change slide every 3 seconds
 }
-// function redirectToIndex() {
-//     // Use window.location.href for redirection
-//     window.location.href = '../index.html';
-// }
+
 let log = document.getElementById("sign-up");
 let lc = document.getElementById("sign-co");
 function Login(){
@@ -34,3 +31,12 @@ function signin(){
 }
 
 
+function next(){
+  let new_username = document.getElementById("new-username").value;
+  localStorage.setItem('username',new_username);
+
+}
+function nxt(){
+  let new_username = document.getElementById("username").value;
+  localStorage.setItem('username',new_username);
+}

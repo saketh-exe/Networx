@@ -14,13 +14,28 @@
         <br>
         <div class="post-content">
             <div class="post-img">
-                Drop Here
+                <input type="file" accept=".jpg, .jpeg, .png" id="input-file">
+                <div class="preview"></div>
             </div>
             <div class="post-details">
-                <Label for = "caption" >Caption:</Label><br>
-                <input type="text" required pattern="New Job Opening " id="caption" placeholder="Write a Caption . . . . . . ">
-                <Label for = "caption" >Location:</Label><br>
-                <input type="text" required pattern="New Job Opening " id="caption" placeholder="Write a Caption . . . . . . ">
+                <Label for = "caption" >Job Title:</Label>
+                <input type="text" required id="caption" placeholder="Tile . . . . . . ">
+                <Label for = "company" >Company:</Label>
+                <input type="text" required id="company" placeholder="Company">
+                <Label for = "location" >Location:</Label>
+                <input type="text" required id="location" placeholder="Write a Location . . . . . . ">
+                <Label for = "work-type" >Work-Type:</Label>
+                <select>
+                    <option>Internship</option>
+                    <option>Full-Time</option>
+                    <option>Part-Time</option>
+                    <option>Hybrid</option>
+                    <option>Remote</option>
+                </select>
+                <label for="skills">Required Skills:</label>
+                <textarea placeholder="Required skills"></textarea>
+
+                <button><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
     </div>
@@ -53,7 +68,7 @@
                         <img src="img/profile.svg" alt="sub-profile">
                         <div class="sub-text">
                             <p id="sub-name">P.Vishnu Saketh</p>
-                            <p>@Saketh-exe</p>
+                            <p id="user-id">@Saketh-exe</p>
                         </div>
                     </div>
                     <div class="sub-links">

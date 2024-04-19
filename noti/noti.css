@@ -87,15 +87,19 @@ body {
   }
   
   .mark-as-read-btn {
-    padding: 0.7rem 1.3rem;
+    padding: 0.7rem 1rem;
     font-size: 1.2rem;
     font-weight: 500;
+    gap: 10px;
     border: 1.3px solid #9b9b9b;
     border-radius: 15px;
     background-color: #dbe7ff;
     color: #2c3541;
     transition: all 300ms ease;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   
   .mark-as-read-btn:hover {
@@ -114,6 +118,7 @@ body {
     border-radius: 20px;
     transition: all 500ms ease;
     cursor: pointer;
+    background-color: aliceblue;
   }
   
   .avatar {
@@ -151,5 +156,5 @@ body {
     
   }
   .notification:hover{
-    background-color: #559cff36;
+    background-color: #4291ff4f;
   }

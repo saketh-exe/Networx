@@ -107,6 +107,7 @@ function theme() {
       document.documentElement.style.setProperty('--subheadings', 'hsl(0, 0%, 77%)');
       document.documentElement.style.setProperty('--headings', 'hsl(0, 0%, 100%)');
       document.documentElement.style.setProperty('--hover-bc', 'hsl(0, 0%, 21%)');
+      document.querySelector("#theme_changer_btn").innerHTML = 'LightTheme <i class="fa-regular fa-sun"></i>'
    }
    else{
       document.documentElement.style.setProperty('--background-c', 'hsl(210, 100%, 97%)');
@@ -119,6 +120,7 @@ function theme() {
       document.documentElement.style.setProperty('--subheadings', 'hsl(0, 0%, 34%)');
       document.documentElement.style.setProperty('--headings', 'hsl(0, 0%, 15%)');
       document.documentElement.style.setProperty('--hover-bc', 'hsl(0, 0%, 85%)');
+      document.querySelector("#theme_changer_btn").innerHTML = 'DarkTheme <i class="fa-solid fa-moon"></i>'
    }
 
 }

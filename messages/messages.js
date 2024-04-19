@@ -37,3 +37,31 @@ document.getElementById("messageInput").addEventListener("keydown", function(eve
         sendMessage(); 
     }
 });
+
+let cards = document.getElementsByClassName("contact-card");
+
+Array.from(cards).forEach(card => {
+    card.addEventListener("click", (e) => {
+
+        
+        // Traverse up the DOM tree until the card element is found
+        let target = e.target;
+        while (target !== card && target.parentElement) {
+            target = target.parentElement;
+        }
+
+        // If the card element is found, apply the "Active" class
+        if (target === card) {
+            // Remove "Active" class from all cards
+            Array.from(cards).forEach(elem => {
+                elem.classList.remove("Active")
+            });
+            // Add "Active" class to the clicked card
+            card.classList.add("Active");
+            let name = card.querySelector(".contact-name").innerHTML;
+            document.querySelector(".chat-header h2").innerHTML = `${name}`;
+        }
+    });
+});
+
+

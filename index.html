@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/acbb96d20a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div class="post-interface">
         <div class="post-close">X</div>
         <br>
@@ -35,7 +36,7 @@
                 <label for="skills">Required Skills:</label>
                 <textarea placeholder="Required skills"></textarea>
 
-                <button><i class="fas fa-paper-plane"></i></button>
+                <button id="new_post"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
     </div>
@@ -49,6 +50,7 @@
         <li><a href="index.html" class="active"><img src="img/home.png" alt="Home"width="30px" height="30px">Home</a></li>
         <li><a href="jobs/Jobs.html"><img src="img/breifcase.png" alt="Jobs"width="30px" height="30px">Jobs</a></li>
         <li><a href="messages/message.html"><img src="img/communication.png" alt="CHAT"width="30px" height="30px">Messaging</a></li>
+        <li><a href="noti/noti.html"><img src="img/bell.png" alt="notification"width="30px" height="30px">Notifications</a></li>
         </ul>
         </div>
 
@@ -71,7 +73,7 @@
                     </div>
                     <div class="sub-links">
                         <a>Settings <i class="fa-solid fa-gear"></i></a>
-                        <a onclick="theme()">Darktheme <i class="fa-solid fa-moon"></i></a>
+                        <a onclick="theme()" id="theme_changer_btn">Darktheme <i class="fa-solid fa-moon"></i></a>
                         <a href="./login/login.html">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
 
                     </div>

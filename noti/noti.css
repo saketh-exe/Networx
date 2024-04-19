@@ -1,0 +1,155 @@
+/* Base styles */
+
+#preloader{
+    background-color: rgba(113, 215, 255, 0.233);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    gap: 10%;
+ 
+    align-items: center;
+
+    img{
+        width: 150px;
+        animation: rotate linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%) 2.5s forwards;
+    }
+}
+.loading-box{
+    width: 95%;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgba(255, 197, 197, 0);
+    /* border: 1px solid black; */
+
+}
+.load-grad{
+    background-image: linear-gradient(to right,rgb(255, 96, 96),rgb(0, 0, 0));
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    animation: loading1 linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%) 2.5s forwards;
+}
+
+@keyframes loading1 {
+    
+    to{
+        width: 100%;
+    }
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    padding: 0rem 2rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .header-icon {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+  
+  .mark-as-read-btn {
+    padding: 0.7rem 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1.3px solid #9b9b9b;
+    border-radius: 15px;
+    background-color: #dbe7ff;
+    color: #2c3541;
+    transition: all 300ms ease;
+    cursor: pointer;
+  }
+  
+  .mark-as-read-btn:hover {
+    background-color: #8ab1ff;
+  }
+  /* Component-specific styles for notifications */
+.notifications {
+    margin-top: 2rem;
+  }
+  
+  .notification {
+    display: flex;
+    padding: 0rem 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    transition: all 500ms ease;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #cbd5e0;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    color: #718096;
+  }
+  
+  .notification-content {
+    flex: 1;
+    margin-left: 1rem;
+  }
+  
+  .notification-text {
+    margin-bottom: 0.5rem;
+  }
+  
+  .notification-bold {
+    font-weight: bold;
+  }
+  
+  .notification-timestamp {
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+  
+  .Active{
+    background-color: #97979760;
+    
+  }
+  .notification:hover{
+    background-color: #559cff36;
+  }

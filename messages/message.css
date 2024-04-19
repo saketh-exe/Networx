@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     body {
         font-family: "Montserrat", sans-serif;
-        background-color: #ededed;
+        background-color: #ffffff;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -14,7 +14,7 @@
         height: 100vh;
     }
     #preloader{
-        background-color: rgba(156, 95, 95, 0.233);
+        background-color: rgba(255, 255, 255, 0.233);
         position: fixed;
         z-index: 100;
         width: 100%;
@@ -62,7 +62,7 @@
     }
     .sidebar {
         flex: 0 0 250px;
-        background-color:   rgb(201, 201, 201);
+        background-color:   rgb(255, 255, 255);
         color: #000000;
         padding: 20px;
         flex: 0 0 250px;
@@ -75,12 +75,12 @@
     }
     
     .sidebar::-webkit-scrollbar-thumb {
-        background-color: #ffffff;
+        background-color: #383838;
         border-radius: 4px;
     }
     
     .sidebar::-webkit-scrollbar-track {
-        background-color: #858585;
+        background-color: #ffffff;
     }
     .chat-section {
         flex: 1;
@@ -99,14 +99,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #e1f2ff;
+    background-color: #bee3ff;
     padding: 10px;
     border-radius: 10px;
     
 
     }
     .chat-header {
-        background-color: #527183;
+        background-color: #363636;
         color: #fff;
         border-radius: 15px;
         margin: 10px;
@@ -120,12 +120,12 @@
         height: 100%;
         overflow-y: auto;
         overflow-x: hidden;
-        padding: 50px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
     }
     .chat-box::-webkit-scrollbar {
-        width: 4px;
+        width: 0px;
     }
     
     .chat-box::-webkit-scrollbar-thumb {
@@ -134,7 +134,7 @@
     }
     
     .chat-box::-webkit-scrollbar-track {
-        background-color: #444444;
+        background-color: #ffffff;
     }
     
     .message {
@@ -142,7 +142,8 @@
         height: max-content;
         background-color: #fff;
         border-radius: 10px;
-        padding: 0px 10px 0px 10px;
+        color: white;
+        padding: 0px 20px 0px 20px;
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: 500;
@@ -155,21 +156,19 @@
      margin-bottom: 10px;
      display: block;
      align-self: flex-end;
-     padding-left: 20px;
      border-radius: 20px 0px 20px 20px;
-        background-color: #72bbff;
+        background-color: #42a4ff;
     }
     
     .message.received {
         align-self: flex-start;
-        padding-right: 20px;
         border-radius: 20px 20px 20px 0px;
-        background-color: #afafaf;
+        background-color: #333333;
     }
     
     .input-box {
         padding: 10px;
-        background-color: #fff;
+        background-color: #333333;
         display: flex;
         align-items: center;
         border-radius: 10px;
@@ -182,7 +181,8 @@
         padding: 10px;
         border: none;
         width: 100%;
-        background-color: #ffffff;
+        color: white;
+        background-color: #3f3f3f;
         font-size: 20px;
         outline: none;
         
@@ -190,7 +190,7 @@
     
     .input-box button {
         padding: 10px 20px;
-        background-color: #12558c;
+        background-color: #4baeff;
         color: #fff;
         border: none;
         border-radius: 10px;
@@ -213,8 +213,12 @@
     }
 
     .contact-card:hover {
-        background-color: #ffffff;
-        color: black;
+        background-color: #333333;
+        color: wheat;
+
+        .latest-message{
+            color: rgb(255, 166, 0);
+        }
     }
 
     .profile-pic {
@@ -235,4 +239,12 @@
     .latest-message {
         font-size: 14px;
         color: #444444;
+    }
+    .Active{
+        background-color: #333333;
+        color: wheat;
+
+        .latest-message{
+            color: rgb(255, 166, 0);
+        }
     }
